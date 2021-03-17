@@ -9,6 +9,7 @@ int schrage(QueueTask qn, Task* tasks)
     int cmax = 0;
     ReadyQueueTask ready;
     Task e;
+
     while (!qn.empty() || !ready.empty())
     {
         while (!qn.empty() && (qn.top().r <= t))
