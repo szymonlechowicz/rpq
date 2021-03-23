@@ -15,8 +15,8 @@ int schrage(QueueTask qn, Task* tasks)
         while (!qn.empty() && (qn.top().r <= t))
         {
             e = qn.top();
-            qn.pop();
             ready.push(e);
+            qn.pop();
         }
         if (ready.empty())
         {

@@ -12,13 +12,15 @@ struct Task
     int order;
 };
 
-// priority: min
+// priority: min r AND p !
 struct CompareR
 {
     bool operator ()(const Task& task1, const Task& task2)
     {
         if (task1.r > task2.r) return true;
         if (task1.r < task2.r) return false;
+        if (task1.p > task2.p) return true;
+        if (task1.p < task2.p) return false;
         return false;
     }
 };

@@ -35,14 +35,14 @@ int main()
         }
 
         //cmax = SortR(queue);
-        //cmax = schrage(queue,task);
-        cmax = schrage_prmt(queue);
+        cmax = schrage(queue,task);
+        //cmax = schrage_prmt(queue);
 
         cout << "Time" << f << ":\t" << cmax << endl;
         sum += cmax;
 
         //permutationR(queue);
-        //permutationSchrage(task, n);
+        permutationSchrage(task, n);
 
     }
     t = clock() - t;
